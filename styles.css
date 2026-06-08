@@ -25,7 +25,6 @@ body {
 a {
     color: #0066cc;
     text-decoration: none;
-    display: inline;
 }
 
 a:hover {
@@ -250,23 +249,25 @@ a:hover {
 }
 
 .about-content p {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
     margin-bottom: 1.2rem;
+    padding-left: 2.5rem;
+    position: relative;
+    font-size: 0.95rem;
+    line-height: 1.8;
 }
 
 .about-content .emoji {
+    position: absolute;
+    left: 0;
+    top: 0;
     font-size: 1.3rem;
     flex-shrink: 0;
-    display: inline-block;
     min-width: 2rem;
 }
 
 .about-content a {
     color: #0066cc;
     text-decoration: underline;
-    display: inline;
 }
 
 .about-content a:hover {
@@ -403,13 +404,5 @@ a:hover {
         padding: 0.5rem 0.8rem;
         font-size: 0.85rem;
         white-space: normal;
-    }
-
-    .about-content p {
-        flex-direction: column;
-    }
-
-    .about-content .emoji {
-        margin-bottom: 0.5rem;
     }
 }
