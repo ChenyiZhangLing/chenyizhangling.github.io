@@ -479,62 +479,7 @@ a:hover {
     color: white;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .hero-content {
-        flex-direction: column;
-        gap: 2rem;
-    }
 
-    .hero-right {
-        flex: 0 0 auto;
-        width: 100%;
-    }
-
-    .hero-name {
-        font-size: 2.5rem;
-    }
-
-    .hero-greeting {
-        font-size: 1.2rem;
-    }
-
-    .hero-tagline {
-        font-size: 1rem;
-    }
-
-    .footer-content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
-    .footer-right {
-        text-align: left;
-    }
-
-    .nav-menu {
-        flex-wrap: wrap;
-    }
-
-    .nav-menu a {
-        padding: 0.5rem 0.8rem;
-        font-size: 0.85rem;
-        white-space: normal;
-    }
-
-    .research-project {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
-    .research-project:nth-child(even) {
-        direction: ltr;
-    }
-
-    .research-project:nth-child(even) > * {
-        direction: ltr;
-    }
-}
 
 /* Homepage layout like Wix */
 .hero {
@@ -833,29 +778,177 @@ a:hover {
     content: none !important;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
-    .hero {
-        min-height: auto;
-        padding: 3rem 0 5rem;
-    }
-
     .hero-content {
         flex-direction: column;
-        align-items: flex-start;
         gap: 2rem;
     }
 
     .hero-right {
-        width: 100%;
         flex: 0 0 auto;
-        justify-content: flex-start;
-        margin-left: 0;
+        width: 100%;
     }
 
+    .hero-name {
+        font-size: 2.5rem;
+    }
+
+    .hero-greeting {
+        font-size: 1.2rem;
+    }
+
+    .hero-tagline {
+        font-size: 1rem;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .footer-right {
+        text-align: left;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+    }
+
+    .nav-menu a {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.85rem;
+        white-space: normal;
+    }
+
+    .research-project {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .research-project:nth-child(even) {
+        direction: ltr;
+    }
+
+    .research-project:nth-child(even) > * {
+        direction: ltr;
+    }
+}
+
+/* Better phone layout for homepage hero */
+@media (max-width: 768px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Make the homepage stack vertically on phones */
+    .hero {
+        padding: 0 !important;
+        min-height: auto !important;
+        display: block !important;
+    }
+
+    .hero-content {
+        width: 100% !important;
+        max-width: none !important;
+        min-height: auto !important;
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    /* Top image/text area */
+    .hero-left {
+        min-height: 560px !important;
+        padding: 5rem 2rem 8rem 2rem !important;
+        background-size: cover !important;
+        background-position: center !important;
+    }
+
+    .hero-greeting {
+        font-size: 1.6rem !important;
+        line-height: 1.2 !important;
+    }
+
+    .hero-name {
+        font-size: 3rem !important;
+        line-height: 1.1 !important;
+        margin-bottom: 1.5rem !important;
+    }
+
+    .hero-tagline {
+        font-size: 1.25rem !important;
+        line-height: 1.4 !important;
+        max-width: 100% !important;
+    }
+
+    /* Photo credit at bottom of image area */
     .hero-credit {
-        left: 30px;
-        right: 30px;
-        bottom: 1rem;
-        max-width: none;
+        position: absolute !important;
+        left: 2rem !important;
+        right: 2rem !important;
+        bottom: 2rem !important;
+        max-width: none !important;
+        font-size: 0.85rem !important;
+        line-height: 1.45 !important;
+    }
+
+    /* Profile card becomes full-width teal panel below */
+    .hero-right {
+        width: 100% !important;
+        background-color: #477b7f !important;
+        padding: 2.5rem 2rem !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .hero-right .profile-card {
+        width: 100% !important;
+        max-width: 320px !important;
+        background: transparent !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        color: white !important;
+    }
+
+    .hero-right .profile-image {
+        width: 130px !important;
+        height: 130px !important;
+        margin-bottom: 1.8rem !important;
+    }
+
+    .hero-right .profile-card h3 {
+        font-size: 1.8rem !important;
+    }
+
+    .hero-right .profile-card .chinese-name {
+        font-size: 1.8rem !important;
+    }
+
+    .hero-right .profile-card p {
+        font-size: 0.95rem !important;
+        line-height: 1.5 !important;
+    }
+
+    /* Make navbar easier on phones */
+    .navbar .container {
+        padding: 0 10px !important;
+        overflow-x: auto !important;
+    }
+
+    .nav-menu {
+        flex-wrap: nowrap !important;
+        overflow-x: auto !important;
+        width: 100% !important;
+    }
+
+    .nav-menu a {
+        font-size: 0.85rem !important;
+        padding: 0.6rem 0.9rem !important;
+        white-space: nowrap !important;
     }
 }
