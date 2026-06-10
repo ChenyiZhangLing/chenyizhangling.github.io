@@ -729,84 +729,31 @@ a:hover {
     background-repeat: no-repeat !important;
 }
 
-/* Publications & Presentations Page */
-.publications-page {
-    background-color: #f9fafb;
+/* More spacing between sections on Publications page */
+.publications-container h1,
+.publications-container h2 {
+    margin-top: 3.5rem !important;
+    margin-bottom: 1.5rem !important;
 }
 
-.publications-container {
-    max-width: 950px;
-    background-color: white;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+/* Keep the first title from having too much space above it */
+.publications-container h1:first-child,
+.publications-container h2:first-child {
+    margin-top: 0 !important;
 }
 
-.publications-container h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    font-style: normal;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    color: #1f2937;
-    margin-top: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.publications-container h1:first-child {
-    margin-top: 0;
-}
-
-.presentation-year {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: #333;
-    margin-top: 1.5rem;
-    margin-bottom: 0.6rem;
-}
-
+/* More space after each publication/presentation list */
 .publication-list {
-    list-style: none;
-    margin-left: 0;
-    padding-left: 0;
-    margin-bottom: 1.8rem;
+    margin-bottom: 2.5rem !important;
 }
 
-.publication-list li {
-    position: relative;
-    padding-left: 1.4rem;
-    margin-bottom: 1rem;
-    font-size: 0.95rem;
-    line-height: 1.8;
-    color: #222;
+/* More space around year headings */
+.presentation-year {
+    margin-top: 2rem !important;
+    margin-bottom: 0.7rem !important;
 }
 
-.publication-list li::before {
-    content: "-";
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-.publication-list em {
-    font-style: italic;
-}
-
-.publication-list strong {
-    font-weight: 700;
-}
-
-.publication-list a {
-    color: #0066cc;
-    text-decoration: underline;
-}
-
-.publication-list a:hover {
-    color: #004c99;
-}
-
-.collaboration-note {
-    margin-top: 2.5rem;
-    font-size: 1rem;
-    line-height: 1.8;
-    font-style: italic;
-    color: #333;
+/* Less extra space immediately after each year list, but still comfortable */
+.presentation-year + .publication-list {
+    margin-bottom: 1.6rem !important;
 }
