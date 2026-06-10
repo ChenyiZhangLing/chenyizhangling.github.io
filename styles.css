@@ -81,135 +81,73 @@ a:hover {
 
 /* Hero Section */
 .hero {
-  background-image: url('images/background.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  min-height: 100vh; /* makes it fill the full screen height */
-  display: flex;
-  align-items: center;
-}
-
-.hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.35);
-  z-index: 0;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 1;
+    padding: 4rem 0;
+    background-color: #fff;
 }
 
 .hero-content {
     display: flex;
-    gap: 3rem;
-    align-items: center;
-    position: relative;
-    z-index: 2;
-    margin: 0 auto;
+    gap: 4rem;
+    align-items: flex-start;
     max-width: 1100px;
+    margin: 0 auto;
     padding: 0 30px;
-    width: 100%;
 }
 
 .hero-left {
     flex: 1;
 }
 
-.hero-greeting {
-    font-size: 1.5rem;
-    font-style: italic;
-    font-weight: 400;
-    margin-bottom: 0.5rem;
-    color: #333;
-}
-
 .hero-name {
-    font-size: 3.5rem;
-    font-weight: 500;
-    margin-bottom: 1rem;
-    color: #000;
+    font-size: 2.8rem;
+    font-weight: 700;
     font-family: 'Georgia', serif;
+    margin-bottom: 0.5rem;
+    color: #000;
 }
 
-.hero-tagline {
-    font-size: 1.3rem;
-    font-style: italic;
+.hero-name span {
+    font-weight: 400;
+}
+
+.hero-subtitle {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.hero-bio {
+    font-size: 0.95rem;
+    line-height: 1.8;
     color: #333;
+    margin-bottom: 1rem;
+}
+
+.hero-bio a {
+    color: #5a8a9a;
+    text-decoration: none;
+}
+
+.hero-bio a:hover {
+    text-decoration: underline;
 }
 
 .hero-right {
-    flex: 0 0 350px;
-}
-
-.profile-card {
-    background-color: #5a8a9a;
-    color: white;
-    padding: 2rem;
-    border-radius: 8px;
+    flex: 0 0 280px;
     text-align: center;
 }
 
-.profile-image {
-    width: 180px;
-    height: 180px;
-    margin: 0 auto 1.5rem;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 4px solid white;
-    background-color: white;
-}
-
-.profile-image img {
+.hero-photo {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.profile-card h3 {
-    font-size: 1.8rem;
-    margin: 0 0 0.3rem 0;
-    font-weight: 500;
-    font-family: 'Georgia', serif;
-}
-
-.profile-card .chinese-name {
-    font-size: 1.2rem;
-    margin: 0 0 0.5rem 0;
-    color: #e8f1f5;
-}
-
-.profile-card .phonetic {
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-    color: #e8f1f5;
-}
-
-.profile-card hr {
-    border: none;
-    border-top: 1px solid rgba(255,255,255,0.3);
-    margin: 1rem 0;
-}
-
-.profile-card .title,
-.profile-card .affiliation,
-.profile-card .university {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    margin-bottom: 0.5rem;
-}
-
-.profile-card .university {
+    border-radius: 4px;
+    display: block;
     margin-bottom: 1rem;
 }
 
-.profile-card .email {
+.hero-caption {
     font-size: 0.85rem;
-    margin-bottom: 0;
+    color: #555;
+    line-height: 1.6;
 }
 
 /* Sections */
