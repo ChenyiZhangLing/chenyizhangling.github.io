@@ -535,3 +535,170 @@ a:hover {
         direction: ltr;
     }
 }
+
+/* Homepage layout like Wix */
+.hero {
+    background: #dce6f0;
+    padding: 0;
+    min-height: auto;
+    display: block;
+    position: relative;
+}
+
+/* Remove the old overlay */
+.hero::before {
+    content: none;
+}
+
+/* Two-column hero: image area + teal profile panel */
+.hero-content {
+    max-width: 980px;
+    min-height: 810px;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 245px;
+    gap: 0;
+    align-items: stretch;
+    position: relative;
+}
+
+/* Left banner image area */
+.hero-left {
+    position: relative;
+    padding: 150px 40px 120px 40px;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.58), rgba(255, 255, 255, 0.58)),
+        url("background.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Main hero text */
+.hero-greeting {
+    font-family: Georgia, serif;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+.hero-name {
+    font-family: Georgia, serif;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #000;
+    margin-bottom: 1.8rem;
+}
+
+.hero-tagline {
+    font-family: Georgia, serif;
+    font-size: 1.55rem;
+    font-style: italic;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 0;
+}
+
+/* Photo credit at bottom-left of the image area */
+.hero-credit {
+    position: absolute;
+    left: 40px;
+    bottom: 120px;
+    max-width: 480px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #222;
+    margin: 0;
+}
+
+/* Right teal profile panel */
+.hero-right {
+    background-color: #477b7f;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 38px 24px;
+}
+
+/* Remove white card style */
+.hero-right .profile-card {
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+    text-align: center;
+    color: white;
+}
+
+/* Profile image */
+.hero-right .profile-image {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 2rem auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.hero-right .profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Profile text */
+.hero-right .profile-card h3 {
+    font-family: Georgia, serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1.2rem;
+}
+
+.hero-right .profile-card p {
+    color: white;
+    font-size: 1rem;
+    line-height: 1.45;
+    margin-bottom: 0.7rem;
+}
+
+.hero-right .profile-card .chinese-name {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.3rem;
+}
+
+.hero-right .profile-card .phonetic {
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.hero-right .profile-card .title,
+.hero-right .profile-card .affiliation,
+.hero-right .profile-card .university {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.hero-right .profile-card .email {
+    margin-top: 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.hero-right .profile-card .orcid {
+    margin-top: 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* Hide the old horizontal lines inside the card */
+.hero-right .profile-card hr {
+    display: none;
+}
