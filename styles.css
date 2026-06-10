@@ -728,3 +728,85 @@ a:hover {
     background-position: center !important;
     background-repeat: no-repeat !important;
 }
+
+/* Publications & Presentations Page */
+.publications-page {
+    background-color: #f9fafb;
+}
+
+.publications-container {
+    max-width: 950px;
+    background-color: white;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.publications-container h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: normal;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #1f2937;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.publications-container h1:first-child {
+    margin-top: 0;
+}
+
+.presentation-year {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #333;
+    margin-top: 1.5rem;
+    margin-bottom: 0.6rem;
+}
+
+.publication-list {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 1.8rem;
+}
+
+.publication-list li {
+    position: relative;
+    padding-left: 1.4rem;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: #222;
+}
+
+.publication-list li::before {
+    content: "-";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.publication-list em {
+    font-style: italic;
+}
+
+.publication-list strong {
+    font-weight: 700;
+}
+
+.publication-list a {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+.publication-list a:hover {
+    color: #004c99;
+}
+
+.collaboration-note {
+    margin-top: 2.5rem;
+    font-size: 1rem;
+    line-height: 1.8;
+    font-style: italic;
+    color: #333;
+}
