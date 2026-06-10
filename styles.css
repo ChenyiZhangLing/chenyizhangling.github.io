@@ -86,7 +86,7 @@ a:hover {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    min-height: 100vh;
+    min-height: 500px;
     display: flex;
     align-items: center;
 }
@@ -109,6 +109,25 @@ a:hover {
     margin: 0 auto;
     padding: 0 30px;
     width: 100%;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid white;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-right {
+    flex: 0 0 320px;    /* fixed width, won't grow */
 }
 
 /* Sections */
