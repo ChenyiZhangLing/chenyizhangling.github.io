@@ -757,3 +757,46 @@ a:hover {
 .presentation-year + .publication-list {
     margin-bottom: 1.6rem !important;
 }
+
+/* Services page */
+.services-page {
+    background-color: #f9fafb;
+}
+
+.services-container {
+    max-width: 950px;
+}
+
+/* Keep Services page headings similar to Publications page */
+.services-container h1 {
+    margin-top: 0 !important;
+    margin-bottom: 2rem !important;
+}
+
+/* Section headings: Reviewing, DoSing, Volunteering, etc. */
+.services-container h2 {
+    font-size: 1.8rem;
+    margin-top: 3.2rem !important;
+    margin-bottom: 1rem !important;
+    color: #5a8a9a;
+    font-style: italic;
+    font-weight: 400;
+    font-family: Georgia, serif;
+    border-bottom: none;
+}
+
+/* First section after Services title should not be too far down */
+.services-container h1 + h2 {
+    margin-top: 1rem !important;
+}
+
+/* Comfortable spacing after each service list */
+.services-container .publication-list {
+    margin-bottom: 2.2rem !important;
+}
+
+/* Link style */
+.services-container a {
+    color: #0066cc;
+    text-decoration: underline;
+}
