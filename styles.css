@@ -79,37 +79,61 @@ a:hover {
     text-decoration: none;
 }
 
+/* Hero / Homepage Banner */
 .hero {
-    padding: 4rem 0;
-    background-image: url('background.JPG');
+    min-height: 490px;
+    padding: 0;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.55)),
+        url("./images/background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    min-height: 500px;
     display: flex;
     align-items: center;
 }
 
-.hero {
-  background-image: url('images/background.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
+/* Remove the dark overlay from your old version */
 .hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.35);
-  z-index: 0;
+    content: none;
 }
 
 .hero-content {
-  position: relative;
-  z-index: 1;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.hero-greeting {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.hero-name {
+    font-size: 4rem;
+    font-weight: 400;
+    font-family: Georgia, serif;
+    font-style: italic;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.hero-tagline {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.hero-credit {
+    font-size: 0.9rem;
+    color: #333;
+    max-width: 620px;
 }
 
 /* Sections */
